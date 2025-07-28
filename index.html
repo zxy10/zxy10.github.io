@@ -5,106 +5,163 @@
     <title>Xiaoyi Zhang(张晓怡) Self-introduction</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            margin: 40px auto;
-            max-width: 900px;
+            margin: 0;
+            background: #f9f9f9;
             color: #333;
-            line-height: 1.6;
         }
-        h1, h2 {
-            color: #003366;
+
+        /* ======== Header ======== */
+        .header {
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
+
+        .header .site-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .nav a {
+            margin-left: 25px;
+            color: #444;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav a:hover {
+            color: #0077cc;
+        }
+
+        /* ======== Main Content ======== */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            display: flex;
+            padding: 0 20px;
+        }
+
         .left-column {
-            float: left;
             width: 25%;
             padding-right: 30px;
-            border-right: 1px solid #ccc;
-            box-sizing: border-box;
         }
+
         .right-column {
-            float: left;
-            width: 70%;
-            padding-left: 30px;
-            box-sizing: border-box;
+            width: 75%;
         }
+
         .profile-pic {
             width: 120px;
             border-radius: 50%;
-            display: block;
             margin-bottom: 20px;
         }
-        a {
-            text-decoration: none;
-            color: #0066cc;
-        }
+
         .social-icons a {
             margin-right: 10px;
             font-size: 20px;
+            color: #444;
         }
+
+        h2 {
+            color: #003366;
+        }
+
         ul {
             padding-left: 20px;
         }
+
         .pub-title {
             font-weight: bold;
         }
+
         .pub-links a {
             margin-right: 10px;
             font-size: 0.9em;
         }
-        .clear {
-            clear: both;
+
+        /* ======== Footer ======== */
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            color: #888;
+            font-size: 14px;
         }
     </style>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <div class="left-column">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-        <h2>Xiaoyi Zhang(张晓怡)</h2>
-        <p>Ph.D. Student<br>Your Affiliation</p>
-        <p>yourname (at) example.edu</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-google"></i></a>
-            <a href="#"><i class="fas fa-file-alt"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fas fa-times"></i></a>
+    <!-- ========== Header Navigation ========== -->
+    <div class="header">
+        <div class="site-title">ACADEMIC THEME</div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Publications</a>
+            <a href="#">Posts</a>
+            <a href="#">Projects</a>
+            <a href="#">Teaching</a>
+            <a href="#">Contact</a>
         </div>
     </div>
 
-    <div class="right-column">
-        <h2>About Me</h2>
-        <p>I am a Ph.D. student at ...</p>
+    <!-- ========== Main Content ========== -->
+    <div class="container">
+        <div class="left-column">
+            <img src="profile.jpg" alt="Profile" class="profile-pic">
+            <h2>Xiaoyi Zhang(张晓怡)</h2>
+            <p>Ph.D. Student<br>Your Affiliation</p>
+            <p>yourname (at) example.edu</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
 
-        <h2>Research Interests</h2>
-        <ul>
-            <li><b>Computer Vision:</b> image recognition, image generation, video captioning</li>
-            <li><b>Machine Learning:</b> meta-learning, incremental learning, transfer learning</li>
-        </ul>
+        <div class="right-column">
+            <h2>Biography</h2>
+            <p>I am a Ph.D. student at ... My research interests include image segmentation, reinforcement learning, and graph-based deep learning models...</p>
 
-        <h2>News</h2>
-        <ul>
-            <li>[Feb. 2020] Our paper about incremental learning is accepted to CVPR 2020.</li>
-            <li>[Feb. 2020] We will host the ACM Multimedia Asia 2020 conference in Singapore!</li>
-            <li>[Sept. 2019] Our paper about few-shot learning is accepted to NeurIPS 2019.</li>
-            <li>[Mar. 2019] Our paper about few-shot learning is accepted to CVPR 2019.</li>
-        </ul>
+            <h2>Research Interests</h2>
+            <ul>
+                <li><b>Computer Vision:</b> image recognition, segmentation</li>
+                <li><b>Machine Learning:</b> reinforcement learning, transfer learning</li>
+            </ul>
 
-        <h2>Publications</h2>
-        <p class="pub-title"><a href="#">Continual Learning for Abdominal Multi-Organ and Tumor Segmentation</a></p>
-        <p>Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, Yaohua Lei, Zongwei Zhou*</p>
-        <p><i>International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2023.</i> <b style="color:red;">Early Accept</b></p>
-        <div class="pub-links">
-            <a href="#">PDF</a>
-            <a href="#">Code</a>
-            <a href="#">BibTeX</a>
+            <h2>Education</h2>
+            <ul>
+                <li>Ph.D. in AI, 2025 — Your University</li>
+                <li>M.S. in Computer Science, 2021 — Another University</li>
+            </ul>
+
+            <h2>News</h2>
+            <ul>
+                <li>[2025.07] Our paper is accepted at CVPR 2025!</li>
+                <li>[2025.06] Invited talk at AAAI workshop on RL in Vision</li>
+            </ul>
+
+            <h2>Recent Publications</h2>
+            <p class="pub-title"><a href="#">Graph-RL: Reinforcement Learning for Graph-Based Segmentation</a></p>
+            <p>Author A, Author B, Your Name*, ... <i>MICCAI 2025</i> <b style="color: red;">Early Accept</b></p>
+            <div class="pub-links">
+                <a href="#">PDF</a>
+                <a href="#">Code</a>
+                <a href="#">BibTeX</a>
+            </div>
         </div>
     </div>
 
-    <div class="clear"></div>
+    <div class="footer">
+        &copy; 2025 Your Name | Hosted on GitHub Pages
+    </div>
 
 </body>
 </html>
